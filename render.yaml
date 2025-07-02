@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: telegram-bot
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "bash start.sh"
+    repo: https://github.com/hamidreza1180/telegram-downloader-bot
+    branch: main
+    autoDeploy: true
